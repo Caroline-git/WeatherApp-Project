@@ -19,128 +19,130 @@
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <h1>It's sunny</h1>
-          <h1 class="cityName">In Paris</h1>
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-4">
+            <h1>It's sunny</h1>
+            <h1 class="cityName">In Paris</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-center">
+            <nav class="navbar navbar-light">
+              <form class="form-inline">
+                <input
+                  style="width: 70%; float: left"
+                  class="form-control mr-sm-2"
+                  id="new-city"
+                  type="search"
+                  placeholder="New City"
+                  aria-label="Search"
+                />
+                <input
+                  style="width: 25%; line-height: 30px; float: right"
+                  type="submit"
+                  value="Search"
+                />
+              </form>
+            </nav>
+          </div>
         </div>
-        <div class="col-4 d-flex justify-content-center">
-          <nav class="navbar navbar-light">
-            <form class="form-inline">
-              <input
-                style="width: 70%; float: left"
-                class="form-control mr-sm-2"
-                id="new-city"
-                type="search"
-                placeholder="New City"
-                aria-label="Search"
-              />
-              <input
-                style="width: 25%; line-height: 30px; float: right"
-                type="submit"
-                value="Search"
-              />
-            </form>
-          </nav>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-4">
-          <p class="currentDate">Current Time</p>
-          <p class="currentWeather">
-            <i class="far fa-sun"></i> <span>24</span
-            ><a href="#" id="celsius-link">°C</a>/<a
-              href="#"
-              id="fahrenheit-link"
-              >°F</a
-            >
-          </p>
-          <p class="todayFeature">Feels like 26 °C/ °F</p>
-          <p class="todayFeature">Precipitation 60%</p>
-          <p class="todayFeature">Wind Speed 5 km/h</p>
-        </div>
-        <div class="col-1">
-          <div class="card-group">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">TUE</h5>
-                <p class="card-text">
-                  <i class="fas fa-sun"></i>
-                  <br />
-                  25°C
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+        <div class="row">
+          <div class="col-4">
+            <p class="currentDate">Current Time</p>
+            <p class="currentWeather">
+              <i class="far fa-sun"></i> <span>24</span
+              ><a href="#" id="celsius-link">°C</a>/<a
+                href="#"
+                id="fahrenheit-link"
+                >°F</a
+              >
+            </p>
+            <p class="todayFeature">Feels like 26 °C/ °F</p>
+            <p class="todayFeature">Precipitation 60%</p>
+            <p class="todayFeature">Wind Speed 5 km/h</p>
+          </div>
+          <div class="col-1">
+            <div class="card-group">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">TUE</h5>
+                  <p class="card-text">
+                    <i class="fas fa-sun"></i>
+                    <br />
+                    25°C
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">WED</h5>
-                <p class="card-text">
-                  <i class="fas fa-cloud"></i>
-                  <br />
-                  22°C
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+          <div class="col-1">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">WED</h5>
+                  <p class="card-text">
+                    <i class="fas fa-cloud"></i>
+                    <br />
+                    22°C
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">THU</h5>
-                <p class="card-text">
-                  <i class="fas fa-cloud-showers-heavy"></i>
-                  <br />
-                  19°C
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+          <div class="col-1">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">THU</h5>
+                  <p class="card-text">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <br />
+                    19°C
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">FRI</h5>
-                <p class="card-text">
-                  <i class="fas fa-sun"></i>
-                  <br />
-                  23°C
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+          <div class="col-1">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">FRI</h5>
+                  <p class="card-text">
+                    <i class="fas fa-sun"></i>
+                    <br />
+                    23°C
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-1">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">SAT</h5>
-                <p class="card-text">
-                  <i class="fas fa-cloud-sun"></i>
-                  <br />
-                  25°C
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+          <div class="col-1">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">SAT</h5>
+                  <p class="card-text">
+                    <i class="fas fa-cloud-sun"></i>
+                    <br />
+                    25°C
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
