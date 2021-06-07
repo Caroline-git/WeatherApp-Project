@@ -16,7 +16,7 @@
 .todayFeature {
   line-height: 5px;
   position: relative;
-  bottom: -50px;
+  bottom: -70px;
 }
 .currentDate {
   line-height: 5px;
@@ -28,4 +28,10 @@
 
 .form-control {
   padding-right: 110px;
+}
+
+.units {
+  positon: relative;
+  font-size: 20px;
+  top: -32px;
 }
