@@ -1,0 +1,22 @@
+.currentWeather {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.far {
+  font-size: 70px;
+}
+.todayFeature {
+  line-height: 5px;
+}
+.currentDate {
+  line-height: 5px;
+}
+
+.col-1 {
+  padding: 0px;
+}
+
+.form-control {
+  padding-right: 110px;
+}
