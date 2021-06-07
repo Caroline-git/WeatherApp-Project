@@ -38,6 +38,7 @@
 
 .git-link {
   border: 1px solid transparent;
+  margin: 0 auto;
   max-width: 500px;
   border-radius: 10;
 }
