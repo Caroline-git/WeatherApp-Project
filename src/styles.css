@@ -37,6 +37,6 @@
 }
 
 .git-link {
-  position: relative;
-  left: -500px;
+  border: 1px solid white;
+  max-width: 500px;
 }
