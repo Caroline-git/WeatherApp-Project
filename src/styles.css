@@ -31,7 +31,11 @@
 }
 
 .units {
-  positon: relative;
+  position: relative;
   font-size: 15px;
-  top: -60px;
+  top: -32px;
+}
+
+.future-temp {
+  margin: 0 auto;
 }
