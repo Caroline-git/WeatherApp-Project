@@ -37,6 +37,9 @@
 }
 
 .git-link {
-  border: 1px solid white;
+  border: 1px solid transparent;
+  padding: 15px;
+  margin: 20px auto;
   max-width: 500px;
+  border-radius: 10;
 }
