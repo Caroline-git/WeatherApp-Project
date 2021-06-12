@@ -57,7 +57,12 @@ newPlace.addEventListener("submit", updateCity);
 function updateTemperature(response) {
   let temperatureElement = document.querySelector("span");
   let currentTemperature = Math.round(response.data.main.temp);
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+
   temperatureElement.innerHTML = `${currentTemperature}`;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = response.data.wind.speed;
 }
 
 //change celsius and fahrenheit with one click (with fake data at this point)

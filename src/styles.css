@@ -10,6 +10,9 @@
   margin-top: 40px;
   margin-bottom: 50px;
 }
+.cityName {
+  text-transform: capitalize;
+}
 .far {
   font-size: 70px;
 }
