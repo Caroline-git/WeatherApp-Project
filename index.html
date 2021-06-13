@@ -21,11 +21,12 @@
     <div class="container">
       <div class="weather-app">
         <div class="row">
-          <div class="col-5">
-            <h1>It's sunny</h1>
-            <h1 class="cityName">In Paris</h1>
+          <div class="col-6">
+            <h1 class="cityName">Paris</h1>
+
+            <p class="currentDate cityName">Current Time</p>
           </div>
-          <div class="col-7 d-flex justify-content-center">
+          <div class="col-6 d-flex justify-content-center">
             <nav class="navbar navbar-light">
               <form class="form-inline">
                 <input
@@ -48,9 +49,15 @@
 
         <div class="row">
           <div class="col-6">
-            <p class="currentDate">Current Time</p>
+            <p><span id="description" class="cityName">sunny</span></p>
             <p class="currentWeather">
-              <i class="far fa-sun"></i> <span>24</span
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                id="icon"
+                alt="Clear"
+                class="float-left"
+              />
+              <span id="weather-now">24</span
               ><span class="units"
                 ><a href="#" id="celsius-link">°C</a>/<a
                   href="#"
@@ -63,7 +70,7 @@
           <div class="col-6">
             <p class="todayFeature">Feels like 26 °C/ °F</p>
             <p class="todayFeature">Humidity: <span id="humidity"></span>%</p>
-            <p class="todayFeature">Wind Speed <span id="wind"></span>km/h</p>
+            <p class="todayFeature">Wind Speed: <span id="wind"></span>km/h</p>
           </div>
         </div>
 

@@ -41,7 +41,7 @@ function updateCity(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${apiKey}&units=metric`;
 
   if (newCity) {
-    cityName.innerHTML = ` In ${newCity}`;
+    cityName.innerHTML = `${newCity}`;
   } else {
     cityName.innerHTML = null;
     alert("Please type a city");
@@ -55,14 +55,21 @@ newPlace.addEventListener("submit", updateCity);
 
 //Update current weather with OpenWeatherMap API
 function updateTemperature(response) {
-  let temperatureElement = document.querySelector("span");
+  let temperatureElement = document.querySelector("#weather-now");
   let currentTemperature = Math.round(response.data.main.temp);
+  let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = `${currentTemperature}`;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.wind.speed;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 //change celsius and fahrenheit with one click (with fake data at this point)
