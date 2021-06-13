@@ -14,19 +14,19 @@ h1 {
   max-width: 550px;
   border-radius: 10px;
 }
+
 .currentWeather {
   font-size: 40px;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
+
 .cityName {
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 7px;
 }
-.far {
-  font-size: 70px;
-}
+
 .todayFeature {
   line-height: 5px;
   position: relative;
@@ -75,4 +75,26 @@ h1 {
   margin: 0 auto;
   max-width: 550px;
   border-radius: 10px;
+}
+.today-weather {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.weather-forecast {
+  margin-top: 0;
+  text-align: center;
+  color: #a17c76;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.min {
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
 }
