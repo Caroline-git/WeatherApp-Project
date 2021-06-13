@@ -80,9 +80,7 @@ function updateTemperature(response) {
 //celsius
 function clickCel() {
   changeCelsius.classList.add("active");
-
   changeFahrenheit.classList.remove("active");
-  changeFahrenheit.classList.add("inactive");
 
   let newCel = document.querySelector("#weather-now");
   newCel.innerHTML = Math.round(celsiusTemperature);
@@ -101,7 +99,6 @@ function clickFahren(event) {
   let newFahren = document.querySelector("#weather-now");
   changeCelsius.classList.remove("active");
   changeFahrenheit.classList.add("active");
-  changeCelsius.classList.add("inactive");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   newFahren.innerHTML = Math.round(fahrenheitTemperature);
 }
