@@ -62,6 +62,8 @@ function updateTemperature(response) {
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
 
+  celsiusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = `${currentTemperature}`;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.wind.speed;
@@ -77,17 +79,31 @@ function updateTemperature(response) {
 
 //celsius
 function clickCel() {
-  let newCel = document.querySelector("span");
-  newCel.innerHTML = `19`;
+  changeCelsius.classList.add("active");
+
+  changeFahrenheit.classList.remove("active");
+  changeFahrenheit.classList.add("inactive");
+
+  let newCel = document.querySelector("#weather-now");
+  newCel.innerHTML = Math.round(celsiusTemperature);
 }
+
+//If we don't write the element inside a function, then it is global. It can be used inside any functions and its value would not be overwritten.
+let celsiusTemperature = null;
 
 let changeCelsius = document.querySelector("#celsius-link");
 changeCelsius.addEventListener("click", clickCel);
 
 //fahrenheit
-function clickFahren() {
-  let newFahren = document.querySelector("span");
-  newFahren.innerHTML = `66`;
+function clickFahren(event) {
+  event.preventDefault();
+
+  let newFahren = document.querySelector("#weather-now");
+  changeCelsius.classList.remove("active");
+  changeFahrenheit.classList.add("active");
+  changeCelsius.classList.add("inactive");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  newFahren.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let changeFahrenheit = document.querySelector("#fahrenheit-link");

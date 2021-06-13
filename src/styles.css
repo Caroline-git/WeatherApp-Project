@@ -49,6 +49,26 @@ h1 {
   top: -32px;
 }
 
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+#celsius-link {
+  text-decoration: none;
+}
+.active {
+  cursor: default;
+  color: #c39286;
+}
+
+.active:hover {
+  color: #c39286;
+}
+
+#weather-now {
+  font-size: 64px;
+}
+
 .git-link {
   border: 1px solid transparent;
   margin: 0 auto;
