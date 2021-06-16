@@ -80,7 +80,7 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -98,12 +98,14 @@ function displayForecast() {
                 <span class="weather-forecast-temperature min">12°</span>
               </div>
             </div>
-          </div>
+         
    `;
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+
+displayForecast();
 
 //change celsius and fahrenheit with one click (with fake data at this point)
 //currentTemperature  celsius-link  fahrenheit-link
