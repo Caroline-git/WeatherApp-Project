@@ -30,6 +30,12 @@ formatTime();
 setInterval(formatTime, 10000);
 
 // make the city match the search content: e.g. when search for "London", the INNERHTML changes to "London"
+function retrieveWeather(city) {
+  let apiKey = "98cd09b7643a389e487e141a1cbc6c38";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(updateTemperature);
+}
 
 function updateCity(event) {
   event.preventDefault();
@@ -72,11 +78,12 @@ function updateTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecast(response.data.coord);
 }
 
 //forecast
-
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -105,7 +112,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-displayForecast();
+//get forecast
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "98cd09b7643a389e487e141a1cbc6c38";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 //change celsius and fahrenheit with one click (with fake data at this point)
 //currentTemperature  celsius-link  fahrenheit-link
@@ -138,3 +151,6 @@ function clickFahren(event) {
 
 let changeFahrenheit = document.querySelector("#fahrenheit-link");
 changeFahrenheit.addEventListener("click", clickFahren);
+
+//start
+retrieveWeather("paris");
