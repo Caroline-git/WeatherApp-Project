@@ -1,6 +1,6 @@
 h1 {
-  font-family: "Teko", sans-serif;
   color: #a17c76;
+  font-family: "Teko", sans-serif;
 }
 
 .feature {
@@ -8,11 +8,12 @@ h1 {
 }
 
 .weather-app {
-  border: 1px solid #dadde1;
+  border: 1px solid white;
   padding: 15px;
   margin: 20px auto;
   max-width: 550px;
   border-radius: 10px;
+  background-image: url(https://i.pinimg.com/originals/f2/89/63/f2896393df085e0ef3cfc7c87e06510c.jpg);
 }
 
 .currentWeather {
@@ -83,7 +84,7 @@ h1 {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .min {
@@ -105,4 +106,8 @@ h1 {
   color: white;
   background-color: #a17c76;
   transition: ease-in-out 200ms;
+}
+
+#weather-now {
+  color: #a17c76;
 }
