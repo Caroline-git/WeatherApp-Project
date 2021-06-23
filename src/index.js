@@ -136,37 +136,6 @@ function formatDay(timestamp) {
 
   return days[day];
 }
-//change celsius and fahrenheit with one click (with fake data at this point)
-//currentTemperature  celsius-link  fahrenheit-link
-
-//celsius
-function clickCel() {
-  changeCelsius.classList.add("active");
-  changeFahrenheit.classList.remove("active");
-
-  let newCel = document.querySelector("#weather-now");
-  newCel.innerHTML = Math.round(celsiusTemperature);
-}
-
-//If we don't write the element inside a function, then it is global. It can be used inside any functions and its value would not be overwritten.
-let celsiusTemperature = null;
-
-let changeCelsius = document.querySelector("#celsius-link");
-changeCelsius.addEventListener("click", clickCel);
-
-//fahrenheit
-function clickFahren(event) {
-  event.preventDefault();
-
-  let newFahren = document.querySelector("#weather-now");
-  changeCelsius.classList.remove("active");
-  changeFahrenheit.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  newFahren.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-let changeFahrenheit = document.querySelector("#fahrenheit-link");
-changeFahrenheit.addEventListener("click", clickFahren);
 
 //start
 retrieveWeather("paris");

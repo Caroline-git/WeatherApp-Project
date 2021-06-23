@@ -30,7 +30,7 @@ h1 {
 .todayFeature {
   line-height: 5px;
   position: relative;
-  bottom: -70px;
+  bottom: -120px;
 }
 .currentDate {
   line-height: 5px;
@@ -48,15 +48,9 @@ h1 {
   position: relative;
   font-size: 15px;
   top: -32px;
+  color: #a17c76;
 }
 
-#fahrenheit-link {
-  text-decoration: none;
-}
-
-#celsius-link {
-  text-decoration: none;
-}
 .active {
   cursor: default;
   color: #c39286;
@@ -97,4 +91,18 @@ h1 {
 }
 .weather-forecast-temperature {
   font-size: 13px;
+}
+
+.button {
+  color: #a17c76;
+  background-color: white;
+  border-width: 0ch;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.button:hover {
+  color: white;
+  background-color: #a17c76;
+  transition: ease-in-out 200ms;
 }
