@@ -138,4 +138,4 @@ function formatDay(timestamp) {
 }
 
 //start
-retrieveWeather("paris");
+retrieveWeather("honolulu");

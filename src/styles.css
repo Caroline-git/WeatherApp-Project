@@ -11,9 +11,10 @@ h1 {
   border: 1px solid white;
   padding: 15px;
   margin: 20px auto;
-  max-width: 550px;
+  max-width: 560px;
   border-radius: 10px;
-  background-image: url(https://i.pinimg.com/originals/f2/89/63/f2896393df085e0ef3cfc7c87e06510c.jpg);
+  background-image: url(https://t4.ftcdn.net/jpg/03/15/10/23/360_F_315102307_sGTOXgOeGKcppK6KMijOigC7orqaC4Mu.jpg);
+  background-position: 14% 0%;
 }
 
 .currentWeather {
@@ -84,11 +85,11 @@ h1 {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .min {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .weather-forecast-temperature {
   font-size: 13px;
