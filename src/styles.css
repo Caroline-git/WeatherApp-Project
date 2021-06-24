@@ -14,7 +14,9 @@ h1 {
   max-width: 560px;
   border-radius: 10px;
   background-image: url(https://t4.ftcdn.net/jpg/03/15/10/23/360_F_315102307_sGTOXgOeGKcppK6KMijOigC7orqaC4Mu.jpg);
-  background-position: 14% 0%;
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
 }
 
 .currentWeather {
